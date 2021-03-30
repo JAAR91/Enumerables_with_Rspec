@@ -6,7 +6,7 @@ describe Enumerable do
 
   describe '#my_each' do
     it 'goes trought a whole array and apply a proc to each of the items' do
-      expect(array.my_each { |item| }).to eq(array)
+      expect(array.my_each { |item| item * 1 }).to eq(array)
     end
 
     it 'goes trought a whole array and apply a proc to each of the items' do
